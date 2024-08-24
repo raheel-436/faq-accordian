@@ -12,4 +12,99 @@
   --Light-pink: hsl(275, 100%, 97%);
   --Grayish-purple: hsl(292, 16%, 49%);
   --Dark-purple: hsl(292, 42%, 14%);
+  --purple: #ad28eb;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--Light-pink);
+}
+
+.background-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 35vh;
+  background-image: url("../assets/images/background-pattern-desktop.svg");
+  z-index: -1; /*to make sure that the background stays behind the accordion */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.accordian-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 15vh;
+}
+
+.faq-accordian {
+  background-color: var(--white);
+  width: 40%;
+  min-height: 60vh;
+  padding: 2rem 2rem;
+  border: none;
+  border-radius: 0.7rem;
+}
+.heading-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.heading-icon {
+  background-image: url("../assets/images/icon-star.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 2rem;
+  width: 2rem;
+}
+
+.heading {
+  flex-grow: 1; /* Takes up the remaining space */
+  text-align: left;
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--Dark-purple);
+}
+
+.faqs-container {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: justify;
+}
+.faq-item {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--Light-pink);
+}
+.faq-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0rem;
+  color: var(--Dark-purple);
+  font-weight: 700;
+  transition: color 0.2s ease;
+  cursor: pointer;
+}
+
+.faq-title:hover {
+  color: var(--purple);
+}
+
+.faq-icon {
+  background-image: url("../assets/images/icon-plus.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 1.5rem;
+  width: 1.5rem;
+  cursor: pointer;
+}
+
+.faq-answer {
+  line-height: 1.5;
+  color: var(--Grayish-purple);
 }
