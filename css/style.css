@@ -41,7 +41,7 @@ body {
 
 .faq-accordian {
   background-color: var(--white);
-  min-width: 40%;
+  width: 40%;
   min-height: 60vh;
   padding: 2rem 2rem;
   border: none;
@@ -102,40 +102,9 @@ body {
   height: 1.5rem;
   width: 1.5rem;
   cursor: pointer;
-  margin-left: 0.5rem;
 }
 
 .faq-answer {
   line-height: 1.5;
   color: var(--Grayish-purple);
-}
-
-/* Media Queries Responsive Design */
-@media (max-width: 380px) {
-  .background-container {
-    background-image: url("../assets/images/background-pattern-mobile.svg");
-  }
-  .accordian-container {
-    padding: 0 1rem;
-  }
-  .faq-accordian {
-    padding: 1.5rem 1.5rem;
-  }
-  .heading {
-    font-size: 1.75rem;
-    text-align: center;
-  }
-  .faq-title {
-    font-size: 0.875rem;
-    font-weight: 600;
-    /* padding-right: 1rem; */
-  }
-  .faq-icon {
-    height: 1rem;
-    width: 1rem;
-    margin-left: 1.5rem;
-  }
-  .faq-answer {
-    font-size: 0.875rem;
-  }
 }
